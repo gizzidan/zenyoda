@@ -1,8 +1,9 @@
 
 <head>
+
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Index</title>
+  <title>Zenyoda Music</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel=stylesheet type=text/css href="{{ url_for('static', filename='main.css') }}">
@@ -11,6 +12,7 @@
 </head>
 
 <body>
+<div class="se-pre-con"></div>
 <section id="home"></section>
 
   <div id="particles-js">
@@ -190,30 +192,36 @@
 
 </div>
 
-  <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-  <script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
 
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
 
-  return t;
-}(document, "script", "twitter-wjs"));</script>
+      return t;
+    }(document, "script", "twitter-wjs"));
+  </script>
+  <script type="text/javascript">
+        // Wait for window load
+      $(window).on('load',function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+      });
+  </script>
   <script type="text/javascript" src="{{ url_for('static', filename='js/particles.js') }}"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='js/smoothScroll.js') }}"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.nav.js') }}"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='js/nav.js') }}"></script>
   <script src="https://use.fontawesome.com/ceaa40ebc6.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>

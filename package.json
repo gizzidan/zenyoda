@@ -1,0 +1,23 @@
+{
+  "name": "zenyoda",
+  "version": "1.0.0",
+  "description": "Zenyoda Music Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gizzidan/zenyoda.git"
+  },
+  "keywords": [
+    "music"
+  ],
+  "author": "gizzidan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gizzidan/zenyoda/issues"
+  },
+  "homepage": "https://github.com/gizzidan/zenyoda#readme",
+  "dependencies": {}
+}

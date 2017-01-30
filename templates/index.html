@@ -210,14 +210,19 @@
       return t;
     }(document, "script", "twitter-wjs"));
   </script>
-
+  <script type="text/javascript">
+        // Wait for window load
+      $(window).on('load',function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+      });
+  </script>
   <script type="text/javascript" src="{{ url_for('static', filename='js/particles.js') }}"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='js/smoothScroll.js') }}"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.nav.js') }}"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='js/nav.js') }}"></script>
-  <script type="text/javascript" src="{{ url_for('static', filename='js/loader.js') }}"></script>
   <script src="https://use.fontawesome.com/ceaa40ebc6.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>

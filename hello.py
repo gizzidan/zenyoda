@@ -1,11 +1,13 @@
 import os
 from flask import Flask, url_for, render_template
+from flask_compress import Compress
 from flask_scss import Scss
-
 
 app = Flask(__name__)
 Scss(app)
 Scss(app, static_dir='static', asset_dir='assets')
+Compress(app)
+
 
 @app.route('/')
 def index():

@@ -1,6 +1,7 @@
 appdirs==1.4.0
 click==6.7
 Flask==0.12
+Flask-Compress==1.4.0
 flask-lesscss==0.9.1
 Flask-Scss==0.5
 gunicorn==19.6.0

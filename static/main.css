@@ -59,136 +59,279 @@
                               #social-em:hover {
                                 color: #f39c12; }
 
-                                .no-js #loader {
-                                  display: none; }
+                                .menu {
+                                  position: fixed;
+                                  right: -200px;
+                                  width: 260px;
+                                  height: 100%;
+                                  top: 0;
+                                  z-index: 400;
+                                  text-align: left; }
 
-                                  .js #loader {
-                                    display: block;
-                                    position: absolute;
-                                    left: 100px;
-                                    top: 0; }
+                                  .menu.menu-open {
+                                    right: 0px; }
 
-                                    .se-pre-con {
-                                      position: fixed;
-                                      left: 0px;
-                                      top: 0px;
-                                      width: 100%;
-                                      height: 100%;
-                                      z-index: 9999;
-                                      background: url(images/loader-128x/Preloader_5.gif) center no-repeat #fff; }
+                                    .menu-wrap {
+                                      position: absolute;
+                                      top: 0;
+                                      left: 60px;
+                                      background: #1a1a1a;
+                                      width: 200px;
+                                      height: 100%; }
 
-                                      body {
-                                        background-color: #272727; }
+                                      .menu h1.logo a {
+                                        font-family: "Raleway", sans-serif;
+                                        font-size: 16px;
+                                        font-weight: 900;
+                                        letter-spacing: 0.15em;
+                                        line-height: 40px;
+                                        text-transform: uppercase;
+                                        color: #ffffff;
+                                        margin-top: 20px; }
 
-                                        h1 {
-                                          letter-spacing: 1.5px;
-                                          font-family: "Lato", sans-serif;
-                                          padding: 10px;
-                                          color: #ddd7d2;
-                                          font-weight: bold; }
+                                        .menu h1.logo a:hover {
+                                          color: #D2527F; }
 
-                                          h2 {
-                                            padding: 10px;
-                                            font-family: "Lato", sans-serif;
-                                            color: #bcb0a6; }
+                                          .menu img.logo {
+                                            margin: 20px 0;
+                                            max-width: 160px; }
 
-                                            a:hover {
-                                              text-decoration: none; }
+                                            .menu a {
+                                              margin-left: 20px;
+                                              color: #808080;
+                                              display: block;
+                                              font-size: 12px;
+                                              font-weight: 700;
+                                              line-height: 40px;
+                                              letter-spacing: 0.1em;
+                                              text-transform: uppercase; }
 
-                                              #particles-js {
-                                                background: transparent;
-                                                position: absolute;
-                                                height: 70%;
-                                                width: 100%;
-                                                top: 0;
-                                                left: 0;
-                                                z-index: 200; }
+                                              .menu a:hover {
+                                                color: #ffffff; }
 
-                                                .particles-c {
-                                                  z-index: 100;
-                                                  top: 0;
-                                                  left: 0;
-                                                  height: 70%;
-                                                  width: 100%;
-                                                  position: absolute;
-                                                  background: #272727 !important; }
+                                                .menu a:active {
+                                                  color: #ffffff; }
 
-                                                  #nav {
-                                                    margin-left: auto;
-                                                    margin-right: auto;
-                                                    left: 0;
-                                                    right: 0;
-                                                    position: fixed;
-                                                    padding-top: 20px;
-                                                    z-index: 400 !important; }
+                                                  .menu a > i {
+                                                    float: left;
+                                                    display: inline-block;
+                                                    vertical-align: middle;
+                                                    text-align: left;
+                                                    width: 25px;
+                                                    font-size: 16px;
+                                                    line-height: 40px;
+                                                    margin: 25px 2px; }
 
-                                                    #nav ul {
-                                                      list-style-type: none;
-                                                      margin: 0; }
+                                                    .menu-close {
+                                                      cursor: pointer;
+                                                      display: block;
+                                                      position: absolute;
+                                                      font-size: 14px;
+                                                      color: #808080;
+                                                      width: 40px;
+                                                      height: 40px;
+                                                      line-height: 40px;
+                                                      top: 20px;
+                                                      right: 5px;
+                                                      -webkit-transition: all 0.1s ease-in-out;
+                                                      -moz-transition: all 0.1s ease-in-out;
+                                                      -ms-transition: all 0.1s ease-in-out;
+                                                      -o-transition: all 0.1s ease-in-out;
+                                                      transition: all 0.1s ease-in-out; }
 
-                                                      #nav li {
-                                                        letter-spacing: 1.5px;
-                                                        font-family: "Lato", sans-serif;
-                                                        font-size: 16px;
-                                                        color: #555;
-                                                        display: inline;
-                                                        padding-right: 80px; }
+                                                      .menu-close:hover {
+                                                        color: #ffffff;
+                                                        -webkit-transition: all 0.1s ease-in-out;
+                                                        -moz-transition: all 0.1s ease-in-out;
+                                                        -ms-transition: all 0.1s ease-in-out;
+                                                        -o-transition: all 0.1s ease-in-out;
+                                                        transition: all 0.1s ease-in-out; }
 
-                                                        #nav li a {
-                                                          padding-top: 17px;
-                                                          text-align: center;
-                                                          color: #555; }
+                                                        .body-push {
+                                                          overflow-x: hidden;
+                                                          position: relative;
+                                                          left: 0; }
 
-                                                          #nav li a:hover {
-                                                            color: #ddd7d2;
-                                                            text-decoration: none;
-                                                            border-top: 3px solid #ddd7d2; }
+                                                          .body-push-toright {
+                                                            left: 200px; }
 
-                                                            #nav li a:focus {
-                                                              text-decoration: none; }
+                                                            .body-push-toleft {
+                                                              left: -200px; }
 
-                                                              .current a {
-                                                                color: #ddd7d2 !important;
-                                                                font-weight: bold;
-                                                                text-decoration: none;
-                                                                border-top: 3px solid #ddd7d2; }
+                                                              .menu, .body-push {
+                                                                -webkit-transition: all 0.3s ease;
+                                                                -moz-transition: all 0.3s ease;
+                                                                -ms-transition: all 0.3s ease;
+                                                                -o-transition: all 0.3s ease;
+                                                                transition: all 0.3s ease; }
 
-                                                                #h {
-                                                                  position: relative;
-                                                                  z-index: 300;
-                                                                  padding-top: 150px;
-                                                                  height: 70%; }
+                                                                #menuToggle {
+                                                                  position: absolute;
+                                                                  top: 20px;
+                                                                  left: 0;
+                                                                  z-index: 11;
+                                                                  display: block;
+                                                                  text-align: center;
+                                                                  font-size: 18px;
+                                                                  color: #555;
+                                                                  width: 40px;
+                                                                  height: 40px;
+                                                                  line-height: 40px;
+                                                                  cursor: pointer;
+                                                                  -webkit-transition: all 0.1s ease-in-out;
+                                                                  -moz-transition: all 0.1s ease-in-out;
+                                                                  -ms-transition: all 0.1s ease-in-out;
+                                                                  -o-transition: all 0.1s ease-in-out;
+                                                                  transition: all 0.1s ease-in-out; }
 
-                                                                  #h h1 {
-                                                                    font-family: 'Pacifico', cursive;
+                                                                  #menuToggle:hover {
                                                                     color: #B93848;
-                                                                    font-size: 70px;
-                                                                    padding: 25px; }
+                                                                    -webkit-transition: all 0.1s ease-in-out;
+                                                                    -moz-transition: all 0.1s ease-in-out;
+                                                                    -ms-transition: all 0.1s ease-in-out;
+                                                                    -o-transition: all 0.1s ease-in-out;
+                                                                    transition: all 0.1s ease-in-out; }
 
-                                                                    #h h2 {
-                                                                      padding-top: 30px;
-                                                                      letter-spacing: 1.5px;
-                                                                      font-family: "Lato", sans-serif;
-                                                                      font-size: 18px;
-                                                                      color: #888; }
+                                                                    .no-js #loader {
+                                                                      display: none; }
 
-                                                                      #h a {
-                                                                        color: #888; }
+                                                                      .js #loader {
+                                                                        display: block;
+                                                                        position: absolute;
+                                                                        left: 100px;
+                                                                        top: 0; }
 
-                                                                        #h a:hover {
-                                                                          color: #ddd7d2; }
+                                                                        .se-pre-con {
+                                                                          position: fixed;
+                                                                          left: 0px;
+                                                                          top: 0px;
+                                                                          width: 100%;
+                                                                          height: 100%;
+                                                                          z-index: 9999;
+                                                                          background: url(images/loader-128x/Preloader_5.gif) center no-repeat #fff; }
 
-                                                                          #m {
-                                                                            background-color: #272727;
-                                                                            margin-top: -50px;
-                                                                            padding-top: 50px; }
+                                                                          body {
+                                                                            background-color: #272727; }
 
-                                                                            #m h1 {
-                                                                              font-family: 'Pacifico', cursive; }
+                                                                            h1 {
+                                                                              letter-spacing: 1.5px;
+                                                                              font-family: "Lato", sans-serif;
+                                                                              padding: 10px;
+                                                                              color: #ddd7d2;
+                                                                              font-weight: bold; }
 
-                                                                              #a {
-                                                                                height: auto;
-                                                                                background-color: white;
-                                                                                margin-top: -50px;
-                                                                                padding-top: 50px;
-                                                                                padding: 50px; }
+                                                                              h2 {
+                                                                                padding: 10px;
+                                                                                font-family: "Lato", sans-serif;
+                                                                                color: #bcb0a6; }
+
+                                                                                a:hover {
+                                                                                  text-decoration: none; }
+
+                                                                                  #particles-js {
+                                                                                    background: transparent;
+                                                                                    position: absolute;
+                                                                                    height: 70vh;
+                                                                                    width: 100%;
+                                                                                    top: 0;
+                                                                                    left: 0;
+                                                                                    z-index: 200; }
+
+                                                                                    .particles-c {
+                                                                                      z-index: 100;
+                                                                                      top: 0;
+                                                                                      left: 0;
+                                                                                      height: 70vh;
+                                                                                      width: 100%;
+                                                                                      position: absolute;
+                                                                                      background: #272727 !important; }
+
+                                                                                      .twitter-follow-button {
+                                                                                        position: absolute;
+                                                                                        top: 0;
+                                                                                        left: 0;
+                                                                                        z-index: 400 !important; }
+
+                                                                                        #nav {
+                                                                                          margin-left: auto;
+                                                                                          margin-right: auto;
+                                                                                          left: 0;
+                                                                                          right: 0;
+                                                                                          position: fixed;
+                                                                                          padding-top: 20px;
+                                                                                          z-index: 400 !important; }
+
+                                                                                          #nav ul {
+                                                                                            list-style-type: none;
+                                                                                            margin: 0; }
+
+                                                                                            #nav li {
+                                                                                              letter-spacing: 1.5px;
+                                                                                              font-family: "Lato", sans-serif;
+                                                                                              font-size: 16px;
+                                                                                              color: #555;
+                                                                                              display: inline;
+                                                                                              padding-right: 80px; }
+
+                                                                                              #nav li:nth-child(4) {
+                                                                                                padding-right: 0px;
+                                                                                                margin-right: 0px; }
+
+                                                                                                #nav li a {
+                                                                                                  padding-top: 17px;
+                                                                                                  text-align: center;
+                                                                                                  color: #555; }
+
+                                                                                                  #nav li a:hover {
+                                                                                                    color: #ddd7d2;
+                                                                                                    text-decoration: none;
+                                                                                                    border-top: 3px solid #ddd7d2; }
+
+                                                                                                    #nav li a:focus {
+                                                                                                      text-decoration: none; }
+
+                                                                                                      .current a {
+                                                                                                        color: #ddd7d2 !important;
+                                                                                                        font-weight: bold;
+                                                                                                        text-decoration: none;
+                                                                                                        border-top: 3px solid #ddd7d2; }
+
+                                                                                                        #h {
+                                                                                                          position: relative;
+                                                                                                          z-index: 300;
+                                                                                                          padding-top: 150px;
+                                                                                                          height: 70vh; }
+
+                                                                                                          #h h1 {
+                                                                                                            font-family: 'Pacifico', cursive;
+                                                                                                            color: #B93848;
+                                                                                                            font-size: 70px;
+                                                                                                            padding: 25px; }
+
+                                                                                                            #h h2 {
+                                                                                                              padding-top: 30px;
+                                                                                                              letter-spacing: 1.5px;
+                                                                                                              font-family: "Lato", sans-serif;
+                                                                                                              font-size: 18px;
+                                                                                                              color: #888; }
+
+                                                                                                              #h a {
+                                                                                                                color: #888; }
+
+                                                                                                                #h a:hover {
+                                                                                                                  color: #ddd7d2; }
+
+                                                                                                                  #m {
+                                                                                                                    background-color: #272727;
+                                                                                                                    margin-top: -50px;
+                                                                                                                    padding-top: 50px; }
+
+                                                                                                                    #m h1 {
+                                                                                                                      font-family: 'Pacifico', cursive; }
+
+                                                                                                                      #a {
+                                                                                                                        height: auto;
+                                                                                                                        background-color: white;
+                                                                                                                        margin-top: -50px;
+                                                                                                                        padding-top: 50px;
+                                                                                                                        padding: 50px; }

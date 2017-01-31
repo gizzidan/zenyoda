@@ -20,24 +20,40 @@
   <div class="particles-c">
     </div>
 
-  <ul id="nav" class="centered">
-    <div class="centered">
-      <li><a class="smoothScroll centered" href="#home">Home</a></li>
-      <li><a class="smoothScroll centered" href="#music">Music</a></li>
-      <li><a class="smoothScroll centered" href="#about">About</a></li>
-    </div>
-    <div style="margin-top:-20px" class="alignright">
-      <li><a class="twitter-follow-button centered"href="https://twitter.com/zenyodamusic">Follow @zenyodamusic</a></li>
+  <ul id="nav" class="centered hidden-md-down">
+    <div class="centered" style="left:100px">
+        <li><a class="smoothScroll centered" href="#home">Home</a></li>
+        <li><a class="smoothScroll centered" href="#music">Music</a></li>
+        <li><a class="smoothScroll centered" href="#about">About</a></li>
+        <li><a class="twitter-follow-button centered"href="https://twitter.com/zenyodamusic">Follow @zenyodamusic</a></li>
     </div>
   </ul>
+
+<div class="hidden-lg-up">
+  <ul id="nav">
+    <li><a class="twitter-follow-button centered"href="https://twitter.com/zenyodamusic">Follow @zenyodamusic</a></li>
+  </ul>
+  <div class="menu" id="theMenu">
+        <div class="menu-wrap">
+          <h1 class="logo"><a href="#home">Zenyøda</a></h1>
+          <i class="fa fa-times menu-close" aria-hidden="true"></i>
+          <a href="#home" class="smoothScroll">Home</a>
+          <a href="#music" class="smoothScroll">Music</a>
+          <a href="#about" class="smoothScroll">About</a>
+        </div>
+      <!-- Menu button -->
+        <div id="menuToggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+  </div>
+</div>
+
 
 
     <div id="h">
       <div class="container-fluid">
         <div class="row centered">
-          <div class="col-md-10 offset-1">
+          <div class="col">
             <h1 class="centered">Zenyøda</h1>
-            <h2><a href="zenyodamusic.bandcamp.com"><i class="fa fa-bandcamp" aria-hidden="true"></i> zenyodamusic.bandcamp.com</a></h2>
+            <h2><a href="http://www.zenyodamusic.bandcamp.com"><i class="fa fa-bandcamp" aria-hidden="true"></i> zenyodamusic.bandcamp.com</a></h2>
           </div>
         </div>
       </div>
@@ -142,21 +158,21 @@
   <div id="a">
     <div class="container-fluid">
       <div class="row">
-        <div class="col">
+        <div class="col-sm">
           <div class="card">
             <div class="card-block">
               <h4 class="card-title">Life Through Twitter</h4>
-              <a class="twitter-timeline mtb" data-height="700" data-theme="light" href="https://twitter.com/zenyodamusic">Tweets by zenyodamusic</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <a class="twitter-timeline mtb" data-height="600" data-theme="light" href="https://twitter.com/zenyodamusic">Tweets by zenyodamusic</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-sm">
           <div class="card">
             <div class="card-block">
                 <h4 class="card-title">Who is Zenyoda?</h4>
                 <h6 class="card-subtitle mb-2 text-muted">Where?</h6>
               <p class="card-text">
-                He was born and raised in NJ.
+                He was born and raised in Central NJ.
               </p>
                 <h6 class="card-subtitle mb-2 text-muted">When?</h2>
               <p class="card-text">
@@ -165,7 +181,7 @@
                 <h6 class="card-subtitle mb-2 text-muted">How?</h2>
               <p class="card-text">
                 I began playing piano at a very young age. I learned drums and taught myself guitar.
-                I like the piano, but I really love the guitar for its superior ability at expression. My DAW of choice is Logic Pro X.
+                I like the piano, but I really love the guitar for its superior ability at expression. My DAW of choice is Logic Pro X. 
               </p>
             </div>
             <div class="card-footer centered">
@@ -223,6 +239,7 @@
   <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.nav.js') }}"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='js/nav.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/menu.js') }}"></script>
   <script src="https://use.fontawesome.com/ceaa40ebc6.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>

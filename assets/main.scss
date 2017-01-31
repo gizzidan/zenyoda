@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'tools';
 @import 'social';
+@import 'menu';
 
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
@@ -40,7 +41,7 @@ a:hover {
 #particles-js {
   background: transparent;
   position: absolute;
-  height: 70%;
+  height: 70vh;
   width: 100%;
   top: 0;
   left: 0;
@@ -51,13 +52,18 @@ a:hover {
   z-index: 100;
   top: 0;
   left: 0;
-  height: 70%;
+  height: 70vh;
   width: 100%;
   position: absolute;
   background: $dark-grey !important;
 }
 
-
+.twitter-follow-button {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 400 !important;
+}
 #nav {
   margin-left: auto;
   margin-right: auto;
@@ -80,6 +86,11 @@ a:hover {
   color: $grey;
   display: inline;
   padding-right: 80px;
+}
+
+#nav li:nth-child(4) {
+	padding-right: 0px;
+	margin-right: 0px;
 }
 
 
@@ -111,7 +122,7 @@ a:hover {
   position: relative;
   z-index: 300;
   padding-top: 150px;
-  height: 70%;
+  height: 70vh;
 }
 #h h1 {
   font-family: $logoFontFamily;
@@ -119,6 +130,7 @@ a:hover {
   font-size: 70px;
   padding: 25px;
 }
+
 
 #h h2 {
   padding-top: 30px;
